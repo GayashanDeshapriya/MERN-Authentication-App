@@ -1,11 +1,12 @@
 
 .glass{
-    background: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
-    box-shadow: 0 4px 30px #4747470b;
+    box-shadow: 0 4px 50px #4747470b;
     backdrop-filter: blur(7.1px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-       
+    border: 3px solid rgba(255, 255, 255, 0.5); /* Adjust the border width here */
+    border-style: solid;
+    border-color: #ffffff;
 }
 .profile_img{
     
