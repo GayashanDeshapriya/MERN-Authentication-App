@@ -27,7 +27,7 @@ export default function Username() {
           <Toaster position='top-center' reverseOrder={false}></Toaster>
     
           <div className='flex justify-center items-center h-screen'>
-          <div className={styles.glass} style={{ width: "35%", paddingTop: '3em' }}>
+          <div className={styles.glass} style={{ width: "35%", paddingTop: '3em', paddingBottom:'2em' }}>
     
               <div className="title flex flex-col items-center">
                 <h4 className='text-4xl font-bold'>Hello Again!</h4>
@@ -43,7 +43,8 @@ export default function Username() {
     
                   <div className="textbox flex flex-col items-center gap-5">
                       <input {...formik.getFieldProps('username')} className={styles.textbox} type="text" placeholder='Username' />
-                      <button className={styles.btn} type='submit'>Let's Go</button>
+                      <button className={styles.btn} type='submit'><Link to="/password">Let's Go
+                        </Link></button>
                   </div>
     
                   <div className="text-center py-2">

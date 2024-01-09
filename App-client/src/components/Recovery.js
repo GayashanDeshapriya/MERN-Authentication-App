@@ -27,21 +27,21 @@ export default function Recovery() {
       <Toaster position='top-center' reverseOrder={false}></Toaster>
 
       <div className='flex justify-center items-center h-screen'>
-        <div className={styles.glass}>
+        <div className={styles.glass} style={{ width: "35%", paddingTop: '3em', paddingBottom:'2em' }}>
 
           <div className="title flex flex-col items-center">
             <h4 className='text-4xl font-bold'>Recovery</h4>
-            <span className='py-3 text-xl w-2/3 text-center text-gray-500'>
+            <span className='py-2 text-xl w-2/3 text-center text-gray-500'>
               Enter OTP to recover password.
             </span>
           </div>
 
-          <form className='pt-20' onSubmit={formik.handleSubmit}>
-            <div className="textbox flex flex-col items-center gap-5">
+          <form className='pt-10' onSubmit={formik.handleSubmit}>
+            <div className="textbox flex flex-col items-center gap-3">
               <div className='input text-center'>
-                <span className='py-4 text-sm text-left text-gray-500 '>Enter 6 digit OTP that sent to your e-mail</span>
-                <input className={styles.textbox} type="text" placeholder='OTP' />
+                <input className={styles.textbox} type="text" placeholder='Enter OTP' />
               </div>
+              <span className='py-1 text-sm text-left text-gray-500 '>Enter 6 digit OTP that sent to your e-mail</span>
               <button className={styles.btn} type='submit'>Recover</button>
             </div>
             <div className="text-center py-2">
